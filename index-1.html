@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vani's personal portfolio - B.Tech Computer Science and Engineering student.">
+    <title>Vani | CSE Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f7ff;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: #ffffffee;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px #00000015;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6a11cb;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #6a11cb;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 8vw, 72px);
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 4vw, 34px);
+            margin-bottom: 20px;
+            color: #ffe600;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            margin: 8px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #ff4081;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #e91e63;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: #6a11cb;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 25px #00000012;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 12px 18px;
+            border-radius: 25px;
+            background: #eee5ff;
+            color: #5b0bb5;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: white;
+            border-radius: 25px;
+        }
+
+        .contact .section-title {
+            color: #ffe600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #151525;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero {
+                min-height: 80vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Vani</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div>
+            <h1>Hi, I'm Vani 👋</h1>
+            <h2>B.Tech 3rd Year CSE Student</h2>
+            <p>
+                A passionate Computer Science and Engineering student who enjoys
+                programming, web development, data analytics, and learning new technologies.
+            </p>
+
+            <div class="buttons">
+                <a class="btn" href="#projects">View My Projects</a>
+                <a class="btn" href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="about">
+            I am a 3rd-year B.Tech Computer Science and Engineering student.
+            I enjoy solving problems, developing projects, and continuously
+            improving my technical skills. I am interested in building useful
+            software solutions and exploring the field of data analytics.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>B.Tech - Computer Science & Engineering</h3>
+                <p><strong>Current Status:</strong> 3rd Year</p>
+                <p>Building a strong foundation in computer science, programming, databases, and web technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">C++</span>
+            <span class="skill">SQL</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Web Development</span>
+            <span class="skill">Data Analytics</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A responsive portfolio website created using HTML and CSS
+                    to showcase my education, skills, projects, and career goals.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Student Project</h3>
+                <p>
+                    A space for future academic projects. Add your project name,
+                    technologies used, and GitHub link here.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Data Analytics Project</h3>
+                <p>
+                    A space for a future data analytics project where I can
+                    showcase data analysis, insights, and visualizations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Career Goal</h2>
+        <div class="about">
+            <p>
+                My goal is to become a skilled IT professional and software developer,
+                gain practical experience through real-world projects, and continue
+                learning new technologies.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>
+            I am open to learning opportunities, projects, and professional connections.
+        </p>
+        <div class="buttons">
+            <a class="btn" href="mailto:your-email@example.com">Email Me</a>
+            <a class="btn" href="https://github.com/" target="_blank">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+        <p style="margin-top:20px; font-size:14px;">
+            Replace the email and social links above with your actual details.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Vani | B.Tech CSE Student</p>
+    </footer>
+
+</body>
+</html>
